@@ -25,6 +25,7 @@ jobs:
     - name: Archive text file
       uses: actions/download-artifact@v4
       with:
+        name: hello-artifact
         path: ./artifacts/
     - name: display content of text file
       run: cat ./artifacts/hello.txt
